@@ -1,12 +1,12 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Affiliates\Middleware;
+namespace GEBilling\Extensions\Others\Affiliates\Middleware;
 
 use App\Helpers\ExtensionHelper;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
-use Paymenter\Extensions\Others\Affiliates\Models\Affiliate;
+use GEBilling\Extensions\Others\Affiliates\Models\Affiliate;
 use Symfony\Component\HttpFoundation\Response;
 
 class AffiliatesMiddleware

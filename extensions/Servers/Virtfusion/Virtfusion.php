@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Servers\Virtfusion;
+namespace GEBilling\Extensions\Servers\Virtfusion;
 
 use App\Classes\Extension\Server;
 use App\Models\Service;

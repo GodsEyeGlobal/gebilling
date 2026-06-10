@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Affiliates\Http\Requests;
+namespace GEBilling\Extensions\Others\Affiliates\Http\Requests;
 
 use App\Http\Requests\Api\Admin\AdminApiRequest;
 
@@ -12,7 +12,7 @@ class UpdateAffiliateRequest extends AdminApiRequest
     {
         return [
             'user_id' => 'nullable|exists:users,id',
-            'code' => 'nullable|string|max:255|unique:Paymenter\Extensions\Others\Affiliates\Models\Affiliate,code,' . $this->route()->parameter('affiliate')->id,
+            'code' => 'nullable|string|max:255|unique:GEBilling\Extensions\Others\Affiliates\Models\Affiliate,code,' . $this->route()->parameter('affiliate')->id,
             'enabled' => 'nullable|boolean',
             'reward' => 'nullable|numeric|min:0|max:100',
         ];

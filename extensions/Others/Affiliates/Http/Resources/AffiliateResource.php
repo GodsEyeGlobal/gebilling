@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Affiliates\Http\Resources;
+namespace GEBilling\Extensions\Others\Affiliates\Http\Resources;
 
 use App\Http\Resources\UserResource;
 use App\Models\Affiliate;

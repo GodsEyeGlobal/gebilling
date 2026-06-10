@@ -1,9 +1,9 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Announcements\Livewire\Announcements;
+namespace GEBilling\Extensions\Others\Announcements\Livewire\Announcements;
 
 use Livewire\Component;
-use Paymenter\Extensions\Others\Announcements\Models\Announcement;
+use GEBilling\Extensions\Others\Announcements\Models\Announcement;
 
 class Index extends Component
 {

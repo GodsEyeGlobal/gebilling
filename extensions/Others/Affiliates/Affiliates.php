@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Affiliates;
+namespace GEBilling\Extensions\Others\Affiliates;
 
 use App\Classes\Extension\Extension;
 use App\Events\Invoice\Paid as InvoicePaid;
@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\View;
 use Livewire\Livewire;
-use Paymenter\Extensions\Others\Affiliates\Listeners\AssociateOrderWithAffiliate;
-use Paymenter\Extensions\Others\Affiliates\Listeners\IncreamentAffiliateSignups;
-use Paymenter\Extensions\Others\Affiliates\Listeners\RewardAffiliate;
-use Paymenter\Extensions\Others\Affiliates\Livewire\Affiliates\Affiliate as AffiliateComponent;
-use Paymenter\Extensions\Others\Affiliates\Middleware\AffiliatesMiddleware;
-use Paymenter\Extensions\Others\Affiliates\Models\Affiliate;
+use GEBilling\Extensions\Others\Affiliates\Listeners\AssociateOrderWithAffiliate;
+use GEBilling\Extensions\Others\Affiliates\Listeners\IncreamentAffiliateSignups;
+use GEBilling\Extensions\Others\Affiliates\Listeners\RewardAffiliate;
+use GEBilling\Extensions\Others\Affiliates\Livewire\Affiliates\Affiliate as AffiliateComponent;
+use GEBilling\Extensions\Others\Affiliates\Middleware\AffiliatesMiddleware;
+use GEBilling\Extensions\Others\Affiliates\Models\Affiliate;
 
 class Affiliates extends Extension
 {

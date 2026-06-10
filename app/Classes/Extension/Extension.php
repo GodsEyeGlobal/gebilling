@@ -9,7 +9,7 @@ use App\Models\Server;
 /**
  * Base class for extensions
  *
- * @link https://docs.paymenter.org/development/extensions
+ * @link https://docs.godseyeglobal.com/development/extensions
  */
 class Extension
 {
@@ -26,7 +26,7 @@ class Extension
         if (empty($this->config)) {
             // Check from which type its being called
             $type = debug_backtrace()[1]['class'];
-            $type = str_replace('Paymenter\Extensions\\', '', $type);
+            $type = str_replace('GEBilling\Extensions\\', '', $type);
             $type = str_replace('\\' . class_basename(static::class), '', $type);
             if (in_array($type, ['Servers', 'Gateways'])) {
                 $type = substr($type, 0, -1);
@@ -43,7 +43,7 @@ class Extension
     /**
      * Get the configuration fields for the extension
      *
-     * @link https://docs.paymenter.org
+     * @link https://docs.godseyeglobal.com
      *
      * @param  array  $values  The current values of the configuration (is empty on first load)
      * @return array

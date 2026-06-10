@@ -1,9 +1,9 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource\Pages;
+namespace GEBilling\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
-use Paymenter\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource;
+use GEBilling\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource;
 
 class CreateAnnouncement extends CreateRecord
 {

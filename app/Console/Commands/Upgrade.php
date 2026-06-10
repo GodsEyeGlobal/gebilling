@@ -7,7 +7,7 @@ use Symfony\Component\Process\Process;
 
 class Upgrade extends Command
 {
-    protected const DEFAULT_URL = 'https://github.com/godseyeglobal/gebilling/releases/%s/paymenter.tar.gz';
+    protected const DEFAULT_URL = 'https://github.com/godseyeglobal/gebilling/releases/%s/gebilling.tar.gz';
 
     /**
      * The name and signature of the console command.

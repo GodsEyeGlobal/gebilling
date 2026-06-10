@@ -30,7 +30,7 @@ class LoginTest extends TestCase
     public function test_cant_login_with_invalid_credentials()
     {
         Livewire::test(Login::class)
-            ->set('email', 'admin@paymenter')
+            ->set('email', 'admin@godseyeglobal')
             ->set('password', 'password')
             ->call('submit')
             ->assertHasErrors('email');
@@ -42,12 +42,12 @@ class LoginTest extends TestCase
     public function test_can_login_with_valid_credentials()
     {
         User::factory()->create([
-            'email' => 'tests@paymenter.org',
+            'email' => 'tests@godseyeglobal.com',
             'password' => Hash::make('password'),
         ]);
 
         Livewire::test(Login::class)
-            ->set('email', 'tests@paymenter.org')
+            ->set('email', 'tests@godseyeglobal.com')
             ->set('password', 'password')
             ->call('submit')
             ->assertHasNoErrors()
@@ -69,7 +69,7 @@ class LoginTest extends TestCase
         ]);
 
         Livewire::test(Login::class)
-            ->set('email', 'test@paymenter.org')
+            ->set('email', 'test@godseyeglobal.com')
             ->set('password', 'password')
             ->set('captcha', 'wrong')
             ->call('submit')
@@ -79,7 +79,7 @@ class LoginTest extends TestCase
 
         // Test without captcha
         Livewire::test(Login::class)
-            ->set('email', 'test@paymenter.org')
+            ->set('email', 'test@godseyeglobal.com')
             ->set('password', 'password')
             ->call('submit')
             ->assertHasErrors('captcha');
@@ -93,7 +93,7 @@ class LoginTest extends TestCase
     public function test_can_login_with_valid_credentials_and_redirect_to_intended_url()
     {
         User::factory()->create([
-            'email' => 'test@paymenter.org',
+            'email' => 'test@godseyeglobal.com',
             'password' => Hash::make('password'),
             'role_id' => 1,
         ]);
@@ -101,7 +101,7 @@ class LoginTest extends TestCase
         $this->get('/admin/settings')->assertRedirect(route('login'));
 
         Livewire::test(Login::class)
-            ->set('email', 'test@paymenter.org')
+            ->set('email', 'test@godseyeglobal.com')
             ->set('password', 'password')
             ->call('submit')
             ->assertHasNoErrors()

@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  DOCS_REPOSITORY: Paymenter/docs
+  DOCS_REPOSITORY: GEBilling/docs
   DOCS_BRANCH: v1
 
 jobs:

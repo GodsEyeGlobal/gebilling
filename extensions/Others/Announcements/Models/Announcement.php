@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Announcements\Models;
+namespace GEBilling\Extensions\Others\Announcements\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

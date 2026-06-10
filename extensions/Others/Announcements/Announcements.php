@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Announcements;
+namespace GEBilling\Extensions\Others\Announcements;
 
 use App\Classes\Extension\Extension;
 use App\Helpers\ExtensionHelper;
@@ -11,11 +11,11 @@ use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\HtmlString;
 use Livewire\Livewire;
-use Paymenter\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource;
-use Paymenter\Extensions\Others\Announcements\Livewire\Announcements\Index;
-use Paymenter\Extensions\Others\Announcements\Livewire\Announcements\Show;
-use Paymenter\Extensions\Others\Announcements\Livewire\Announcements\Widget;
-use Paymenter\Extensions\Others\Announcements\Models\Announcement;
+use GEBilling\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource;
+use GEBilling\Extensions\Others\Announcements\Livewire\Announcements\Index;
+use GEBilling\Extensions\Others\Announcements\Livewire\Announcements\Show;
+use GEBilling\Extensions\Others\Announcements\Livewire\Announcements\Widget;
+use GEBilling\Extensions\Others\Announcements\Models\Announcement;
 
 class Announcements extends Extension
 {

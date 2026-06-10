@@ -1,10 +1,10 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource\Pages;
+namespace GEBilling\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource\Pages;
 
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
-use Paymenter\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource;
+use GEBilling\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource;
 
 class ListAnnouncements extends ListRecords
 {

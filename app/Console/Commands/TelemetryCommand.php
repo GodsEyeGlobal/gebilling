@@ -85,7 +85,7 @@ class TelemetryCommand extends Command
 
         // Send telemetry data
         $this->info('Sending telemetry data...');
-        $response = Http::post('https://api.paymenter.org/statistics', $data)->throw();
+        $response = Http::post('https://gebapi.godseyeglobal.com/statistics', $data)->throw();
 
         if ($response->successful()) {
             $this->info('Telemetry data sent successfully.');

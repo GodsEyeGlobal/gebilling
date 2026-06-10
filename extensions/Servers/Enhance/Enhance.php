@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Servers\Enhance;
+namespace GEBilling\Extensions\Servers\Enhance;
 
 use App\Classes\Extension\Server;
 use App\Models\Service;

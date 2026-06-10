@@ -21,7 +21,7 @@ class Logout
         // Clear session and cookie
         Session::invalidate();
         Session::regenerateToken();
-        Cookie::queue(Cookie::forget('paymenter_remember'));
+        Cookie::queue(Cookie::forget('gebilling_remember'));
 
         Auth::logout();
     }

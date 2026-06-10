@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Servers\Convoy;
+namespace GEBilling\Extensions\Servers\Convoy;
 
 use App\Classes\Extension\Server;
 use App\Models\Product;
@@ -8,7 +8,7 @@ use App\Models\Service;
 use Exception;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
-use Paymenter\Extensions\Servers\Convoy\Rules\Hostname;
+use GEBilling\Extensions\Servers\Convoy\Rules\Hostname;
 
 class Convoy extends Server
 {

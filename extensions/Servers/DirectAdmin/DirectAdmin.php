@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Servers\DirectAdmin;
+namespace GEBilling\Extensions\Servers\DirectAdmin;
 
 use App\Classes\Extension\Server;
 use App\Models\Service;

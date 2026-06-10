@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Affiliates\Models;
+namespace GEBilling\Extensions\Others\Affiliates\Models;
 
 use App\Helpers\ExtensionHelper;
 use App\Models\Order;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Gateways\Mollie;
+namespace GEBilling\Extensions\Gateways\Mollie;
 
 use App\Classes\Extension\Gateway;
 use App\Helpers\ExtensionHelper;

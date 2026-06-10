@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Others\DiscordNotifications;
+namespace GEBilling\Extensions\Others\DiscordNotifications;
 
 use App\Admin\Resources\InvoiceResource;
 use App\Admin\Resources\OrderResource;
@@ -235,7 +235,7 @@ class DiscordNotifications extends Extension
                     'fields' => $fields,
                     'color' => 0x00FF00,
                     'footer' => [
-                        'text' => 'Paymenter Notifications',
+                        'text' => 'GEBilling Notifications',
                     ],
                     'timestamp' => now()->toIso8601String(),
                 ],

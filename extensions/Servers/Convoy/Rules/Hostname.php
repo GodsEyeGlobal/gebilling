@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Servers\Convoy\Rules;
+namespace GEBilling\Extensions\Servers\Convoy\Rules;
 
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;

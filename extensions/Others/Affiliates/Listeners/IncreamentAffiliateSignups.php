@@ -1,10 +1,10 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Affiliates\Listeners;
+namespace GEBilling\Extensions\Others\Affiliates\Listeners;
 
 use App\Events\User\Created;
 use Illuminate\Support\Facades\Cookie;
-use Paymenter\Extensions\Others\Affiliates\Models\Affiliate;
+use GEBilling\Extensions\Others\Affiliates\Models\Affiliate;
 
 class IncreamentAffiliateSignups
 {

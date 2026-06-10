@@ -64,7 +64,7 @@ class ExtensionHelper
      */
     public static function getExtension($type, $extension, $config = [])
     {
-        $extension = '\\Paymenter\\Extensions\\' . ucfirst($type) . 's\\' . $extension . '\\' . $extension;
+        $extension = '\\GEBilling\\Extensions\\' . ucfirst($type) . 's\\' . $extension . '\\' . $extension;
 
         if (!class_exists($extension)) {
             throw new Exception('Extension "' . $extension . '" not found');
@@ -143,14 +143,14 @@ class ExtensionHelper
 
         // Magic code so we can also support extensions that don't reside in the extensions folder
         foreach ($classmap as $class => $path) {
-            if (strpos($class, 'Paymenter\\Extensions\\') !== 0) {
+            if (strpos($class, 'GEBilling\\Extensions\\') !== 0) {
                 continue;
             }
 
-            // Example: Paymenter\Extensions\Whatevers\SomeExtension\SomeExtension
+            // Example: GEBilling\Extensions\Whatevers\SomeExtension\SomeExtension
             $parts = explode('\\', $class);
 
-            // Must have at least: Paymenter, Extensions, <Type>s, <Name>, <Class>
+            // Must have at least: GEBilling, Extensions, <Type>s, <Name>, <Class>
             if (count($parts) < 5) {
                 continue;
             }
@@ -191,12 +191,12 @@ class ExtensionHelper
                 }
 
                 // Check if the class exists
-                if (class_exists('\\Paymenter\\Extensions\\' . ucfirst($type) . 's\\' . $name . '\\' . $name)) {
+                if (class_exists('\\GEBilling\\Extensions\\' . ucfirst($type) . 's\\' . $name . '\\' . $name)) {
 
                     $extensions[] = [
                         'name' => $name,
                         'type' => $type,
-                        'meta' => self::getMeta('\\Paymenter\\Extensions\\' . ucfirst($type) . 's\\' . $name . '\\' . $name),
+                        'meta' => self::getMeta('\\GEBilling\\Extensions\\' . ucfirst($type) . 's\\' . $name . '\\' . $name),
                     ];
                 }
             }

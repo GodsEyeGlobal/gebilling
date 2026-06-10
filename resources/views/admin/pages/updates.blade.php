@@ -18,7 +18,7 @@
             <strong>Your commit:</strong> {{ config('app.commit') }}
         </div>
         <p>See <a
-                href="https://paymenter.org/docs/installation/updating">https://paymenter.org/docs/installation/updating</a>
+                href="https://godseyeglobal.com/docs/installation/updating">https://godseyeglobal.com/docs/installation/updating</a>
             on how to update</p>
 
         <p class="mt-2">OR try the web updater (This is a beta feature, use at your own risk)</p>
@@ -35,7 +35,7 @@
             <strong>Your version:</strong> {{ config('app.version') }}
         </div>
         <p>See <a
-                href="https://paymenter.org/docs/installation/updating">https://paymenter.org/docs/installation/updating</a>
+                href="https://godseyeglobal.com/docs/installation/updating">https://godseyeglobal.com/docs/installation/updating</a>
             on how to update</p>
 
         <p class="mt-2">OR try the web updater (This is a beta feature, use at your own risk)</p>

@@ -1,10 +1,10 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Affiliates\Policies;
+namespace GEBilling\Extensions\Others\Affiliates\Policies;
 
 use App\Models\User;
 use App\Policies\BasePolicy;
-use Paymenter\Extensions\Others\Affiliates\Models\Affiliate;
+use GEBilling\Extensions\Others\Affiliates\Models\Affiliate;
 
 class AffiliatePolicy extends BasePolicy
 {

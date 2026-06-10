@@ -125,7 +125,7 @@ return [
     |
     */
 
-    'cookie' => 'paymenter_session',
+    'cookie' => 'gebilling_session',
 
     /*
     |--------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Servers\Pterodactyl;
+namespace GEBilling\Extensions\Servers\Pterodactyl;
 
 use App\Classes\Extension\Server;
 use App\Models\Service;
@@ -212,7 +212,7 @@ class Pterodactyl extends Server
                 'label' => 'Port Array',
                 'type' => 'text',
                 'description' => 'Used to assign ports to egg variables.',
-                'hint' => new HtmlString('<a href="https://paymenter.org/docs/extensions/pterodactyl#port-array" target="_blank">Documentation</a>'),
+                'hint' => new HtmlString('<a href="https://godseyeglobal.com/docs/extensions/pterodactyl#port-array" target="_blank">Documentation</a>'),
                 'live' => true,
                 'validation' => 'json',
             ],

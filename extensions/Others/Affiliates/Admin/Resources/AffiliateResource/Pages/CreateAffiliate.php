@@ -1,9 +1,9 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource\Pages;
+namespace GEBilling\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
-use Paymenter\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource;
+use GEBilling\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource;
 
 class CreateAffiliate extends CreateRecord
 {

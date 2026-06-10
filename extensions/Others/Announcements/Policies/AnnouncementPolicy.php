@@ -1,10 +1,10 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Announcements\Policies;
+namespace GEBilling\Extensions\Others\Announcements\Policies;
 
 use App\Models\User;
 use App\Policies\BasePolicy;
-use Paymenter\Extensions\Others\Announcements\Models\Announcement;
+use GEBilling\Extensions\Others\Announcements\Models\Announcement;
 
 class AnnouncementPolicy extends BasePolicy
 {

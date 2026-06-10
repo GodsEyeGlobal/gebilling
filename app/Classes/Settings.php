@@ -37,7 +37,7 @@ class Settings
                     'label' => 'Company Name',
                     'type' => 'text',
                     'override' => 'app.name',
-                    'default' => 'Paymenter',
+                    'default' => 'GEBilling',
                 ],
                 [
                     'name' => 'timezone',
@@ -186,7 +186,7 @@ class Settings
                 [
                     'name' => 'oauth_google',
                     'label' => 'Google Enabled',
-                    'description' => new HtmlString('<a href="https://paymenter.org/docs/guides/OAuth#google" target="_blank">Documentation</a>'),
+                    'description' => new HtmlString('<a href="https://godseyeglobal.com/docs/guides/OAuth#google" target="_blank">Documentation</a>'),
                     'type' => 'checkbox',
                     'database_type' => 'boolean',
                     'default' => false,
@@ -207,7 +207,7 @@ class Settings
                 [
                     'name' => 'oauth_github',
                     'label' => 'GitHub Enabled',
-                    'description' => new HtmlString('<a href="https://paymenter.org/docs/guides/OAuth#github" target="_blank">Documentation</a>'),
+                    'description' => new HtmlString('<a href="https://godseyeglobal.com/docs/guides/OAuth#github" target="_blank">Documentation</a>'),
                     'type' => 'checkbox',
                     'database_type' => 'boolean',
                     'default' => false,
@@ -228,7 +228,7 @@ class Settings
                 [
                     'name' => 'oauth_discord',
                     'label' => 'Discord Enabled',
-                    'description' => new HtmlString('<a href="https://paymenter.org/docs/guides/OAuth#discord" target="_blank">Documentation</a>'),
+                    'description' => new HtmlString('<a href="https://godseyeglobal.com/docs/guides/OAuth#discord" target="_blank">Documentation</a>'),
                     'type' => 'checkbox',
                     'database_type' => 'boolean',
                     'default' => false,

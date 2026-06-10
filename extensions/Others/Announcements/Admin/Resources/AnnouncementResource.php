@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Announcements\Admin\Resources;
+namespace GEBilling\Extensions\Others\Announcements\Admin\Resources;
 
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -17,10 +17,10 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
-use Paymenter\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource\Pages\CreateAnnouncement;
-use Paymenter\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource\Pages\EditAnnouncement;
-use Paymenter\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource\Pages\ListAnnouncements;
-use Paymenter\Extensions\Others\Announcements\Models\Announcement;
+use GEBilling\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource\Pages\CreateAnnouncement;
+use GEBilling\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource\Pages\EditAnnouncement;
+use GEBilling\Extensions\Others\Announcements\Admin\Resources\AnnouncementResource\Pages\ListAnnouncements;
+use GEBilling\Extensions\Others\Announcements\Models\Announcement;
 
 class AnnouncementResource extends Resource
 {

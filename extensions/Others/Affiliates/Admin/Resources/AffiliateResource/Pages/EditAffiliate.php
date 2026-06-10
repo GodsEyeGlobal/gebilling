@@ -1,10 +1,10 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource\Pages;
+namespace GEBilling\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource\Pages;
 
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
-use Paymenter\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource;
+use GEBilling\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource;
 
 class EditAffiliate extends EditRecord
 {

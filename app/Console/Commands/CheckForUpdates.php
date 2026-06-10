@@ -35,7 +35,7 @@ class CheckForUpdates extends Command
         }
 
         if (config('app.version') == 'beta') {
-            $version = Http::get('https://api.paymenter.org/version?beta')->json();
+            $version = Http::get('https://gebapi.godseyeglobal.com/version?beta')->json();
             Setting::updateOrCreate(
                 ['key' => 'latest_commit'],
                 ['value' => $version['beta']]
@@ -48,7 +48,7 @@ class CheckForUpdates extends Command
                 $this->info('You are using the latest version: ' . config('app.commit'));
             }
         } else {
-            $version = Http::get('https://api.paymenter.org/version')->json();
+            $version = Http::get('https://gebapi.godseyeglobal.com/version')->json();
 
             if (config('app.version') != $version['latest']) {
                 $this->info('A new version is available: ' . $version['latest']);
@@ -70,7 +70,7 @@ class CheckForUpdates extends Command
             NotificationHelper::sendSystemEmailNotification(
                 'New stable version available',
                 <<<HTML
-                A new stable version of Paymenter is available: {$version['latest']}.<br>
+                A new stable version of GEBilling is available: {$version['latest']}.<br>
                 You are currently using version: {$currentVersion}.<br>
                 
                 Please update as soon as possible.

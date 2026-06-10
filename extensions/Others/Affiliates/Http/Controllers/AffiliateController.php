@@ -1,17 +1,17 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Affiliates\Http\Controllers;
+namespace GEBilling\Extensions\Others\Affiliates\Http\Controllers;
 
 use App\Http\Controllers\Api\ApiController;
 use Dedoc\Scramble\Attributes\Group;
 use Dedoc\Scramble\Attributes\QueryParameter;
-use Paymenter\Extensions\Others\Affiliates\Http\Requests\CreateAffiliateRequest;
-use Paymenter\Extensions\Others\Affiliates\Http\Requests\DeleteAffiliateRequest;
-use Paymenter\Extensions\Others\Affiliates\Http\Requests\GetAffiliateRequest;
-use Paymenter\Extensions\Others\Affiliates\Http\Requests\GetAffiliatesRequest;
-use Paymenter\Extensions\Others\Affiliates\Http\Requests\UpdateAffiliateRequest;
-use Paymenter\Extensions\Others\Affiliates\Http\Resources\AffiliateResource;
-use Paymenter\Extensions\Others\Affiliates\Models\Affiliate;
+use GEBilling\Extensions\Others\Affiliates\Http\Requests\CreateAffiliateRequest;
+use GEBilling\Extensions\Others\Affiliates\Http\Requests\DeleteAffiliateRequest;
+use GEBilling\Extensions\Others\Affiliates\Http\Requests\GetAffiliateRequest;
+use GEBilling\Extensions\Others\Affiliates\Http\Requests\GetAffiliatesRequest;
+use GEBilling\Extensions\Others\Affiliates\Http\Requests\UpdateAffiliateRequest;
+use GEBilling\Extensions\Others\Affiliates\Http\Resources\AffiliateResource;
+use GEBilling\Extensions\Others\Affiliates\Models\Affiliate;
 use Spatie\QueryBuilder\QueryBuilder;
 
 #[Group(name: 'Affiliates', weight: 1)]

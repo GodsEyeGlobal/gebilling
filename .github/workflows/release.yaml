@@ -34,8 +34,8 @@ jobs:
           REF: ${{ github.ref }}
         run: |
           BRANCH=release/${REF:10}
-          git config --local user.email "ci@paymenter.org"
-          git config --local user.name "Paymenter CI"
+          git config --local user.email "contact@godseyeglobal.com"
+          git config --local user.name "GEBilling CI"
           git checkout -b $BRANCH
           git push -u origin $BRANCH
           sed -i "s/    'version' => 'development',/    'version' => '${REF:11}',/" config/app.php
@@ -47,11 +47,11 @@ jobs:
       - name: Create release archive
         run: |
           rm -rf node_modules tests CODE_OF_CONDUCT.md CONTRIBUTING.md flake.lock flake.nix phpstan.neon phpunit.xml shell.nix
-          tar -czf paymenter.tar.gz * .env.example .gitignore
+          tar -czf gebilling.tar.gz * .env.example .gitignore
 
       - name: Create checksum and add to changelog
         run: |
-          SUM=`sha256sum paymenter.tar.gz`
+          SUM=`sha256sum gebilling.tar.gz`
           echo $SUM > checksum.txt
         
       - name: Create release
@@ -70,8 +70,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: paymenter.tar.gz
-          asset_name: paymenter.tar.gz
+          asset_path: gebilling.tar.gz
+          asset_name: gebilling.tar.gz
           asset_content_type: application/gzip
 
       - name: Upload release checksum

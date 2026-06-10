@@ -1,13 +1,13 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Affiliates\Listeners;
+namespace GEBilling\Extensions\Others\Affiliates\Listeners;
 
 use App\Helpers\ExtensionHelper;
 use App\Models\Invoice;
 use App\Models\Service;
 use Illuminate\Support\Collection;
-use Paymenter\Extensions\Others\Affiliates\Models\Affiliate;
-use Paymenter\Extensions\Others\Affiliates\Models\AffiliateOrder;
+use GEBilling\Extensions\Others\Affiliates\Models\Affiliate;
+use GEBilling\Extensions\Others\Affiliates\Models\AffiliateOrder;
 
 class RewardAffiliate
 {

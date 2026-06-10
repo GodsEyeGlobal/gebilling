@@ -47,7 +47,7 @@ class Updates extends Page implements HasForms
                 }
 
                 if (config('app.version') == 'beta') {
-                    Artisan::call(Upgrade::class, ['--no-interaction' => true, '--url' => 'https://api.paymenter.org/beta'], $output);
+                    Artisan::call(Upgrade::class, ['--no-interaction' => true, '--url' => 'https://gebapi.godseyeglobal.com/beta'], $output);
                 } else {
                     Artisan::call(Upgrade::class, ['--no-interaction' => true], $output);
                 }

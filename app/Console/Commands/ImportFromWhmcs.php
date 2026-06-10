@@ -62,7 +62,7 @@ class ImportFromWhmcs extends Command
         $dbname = $this->argument('dbname');
         $host = $this->askOrUseENV(argument: 'host', env: 'DB_HOST', question: 'Enter the host:', placeholder: 'localhost');
         $port = $this->askOrUseENV(argument: 'port', env: 'DB_PORT', question: 'Enter the port:', placeholder: '3306');
-        $username = $this->askOrUseENV(argument: 'username', env: 'DB_USERNAME', question: 'Enter the username:', placeholder: 'paymenter');
+        $username = $this->askOrUseENV(argument: 'username', env: 'DB_USERNAME', question: 'Enter the username:', placeholder: 'gebilling');
         $password = password("Enter the password for user '$username':", required: true);
 
         try {
@@ -675,7 +675,7 @@ class ImportFromWhmcs extends Command
                     $adminUserId = DB::table('users')->insertGetId([
                         'first_name' => $message['admin'],
                         'last_name' => '',
-                        'email' => 'admin+' . strtolower(str_replace(' ', '_', $message['admin'])) . '@paymenter.org',
+                        'email' => 'admin+' . strtolower(str_replace(' ', '_', $message['admin'])) . '@godseyeglobal.com',
                         'password' => bcrypt(\Str::random(16)),
                         'created_at' => now(),
                         'updated_at' => now(),

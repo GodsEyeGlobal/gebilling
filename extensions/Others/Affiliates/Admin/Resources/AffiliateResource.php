@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Others\Affiliates\Admin\Resources;
+namespace GEBilling\Extensions\Others\Affiliates\Admin\Resources;
 
 use App\Admin\Components\UserComponent;
 use App\Helpers\ExtensionHelper;
@@ -13,10 +13,10 @@ use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Paymenter\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource\Pages\EditAffiliate;
-use Paymenter\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource\Pages\ListAffiliates;
-use Paymenter\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource\RelationManagers\AffiliatesRelationManager;
-use Paymenter\Extensions\Others\Affiliates\Models\Affiliate;
+use GEBilling\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource\Pages\EditAffiliate;
+use GEBilling\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource\Pages\ListAffiliates;
+use GEBilling\Extensions\Others\Affiliates\Admin\Resources\AffiliateResource\RelationManagers\AffiliatesRelationManager;
+use GEBilling\Extensions\Others\Affiliates\Models\Affiliate;
 
 class AffiliateResource extends Resource
 {

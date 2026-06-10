@@ -97,7 +97,7 @@ class AppServiceProvider extends ServiceProvider
             // Somehow people manage to have no route
             $route = request()->route();
 
-            if ($route && $route->named('paymenter.livewire.update')) {
+            if ($route && $route->named('gebilling.livewire.update')) {
                 $previousUrl = url()->previous();
 
                 return $previousUrl !== null ? $previousUrl : request()->fullUrl();
@@ -108,7 +108,7 @@ class AppServiceProvider extends ServiceProvider
 
         Request::macro('livewireRoute', function () {
             // Return name of current route
-            if (request()->route()->named('paymenter.livewire.update')) {
+            if (request()->route()->named('gebilling.livewire.update')) {
                 $previousUrl = url()->previous();
 
                 if ($previousUrl !== null) {
@@ -118,7 +118,7 @@ class AppServiceProvider extends ServiceProvider
                     }
                 }
 
-                return 'paymenter.livewire.update';
+                return 'gebilling.livewire.update';
             }
 
             return request()->route()->getName();
@@ -137,7 +137,7 @@ class AppServiceProvider extends ServiceProvider
     {
         // Change livewire url
         Livewire::setUpdateRoute(function ($handle) {
-            return Route::post('/paymenter/update', $handle)->middleware('web')->name('paymenter.');
+            return Route::post('/gebilling/update', $handle)->middleware('web')->name('gebilling.');
         });
         Livewire::propertySynthesizer(PriceSynth::class);
 

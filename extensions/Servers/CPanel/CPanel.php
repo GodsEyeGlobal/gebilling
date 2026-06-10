@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Servers\CPanel;
+namespace GEBilling\Extensions\Servers\CPanel;
 
 use App\Classes\Extension\Server;
 use App\Models\Service;

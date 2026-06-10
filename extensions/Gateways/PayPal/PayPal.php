@@ -198,7 +198,7 @@ class PayPal extends Gateway
                 'name' => 'paypal_support_billing_agreements',
                 'label' => 'Supports Billing Agreements',
                 'type' => 'checkbox',
-                'description' => new HtmlString('Enable this option if your PayPal account supports billing agreements. <a href="https://paymenter.org/docs/extensions/paypal#billing-agreements" target="_blank" rel="noopener">Learn more</a>'),
+                'description' => new HtmlString('Enable this option if your PayPal account supports billing agreements. <a href="https://godseyeglobal.com/docs/extensions/paypal#billing-agreements" target="_blank" rel="noopener">Learn more</a>'),
                 'required' => false,
             ],
         ];

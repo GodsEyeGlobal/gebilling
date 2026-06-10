@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Servers\Virtualizor;
+namespace GEBilling\Extensions\Servers\Virtualizor;
 
 use App\Classes\Extension\Server;
 use App\Models\Product;

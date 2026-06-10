@@ -38,12 +38,12 @@ jobs:
       - name: Create beta archive
         run: | 
             rm -rf node_modules tests CODE_OF_CONDUCT.md CONTRIBUTING.md flake.lock flake.nix phpstan.neon phpunit.xml shell.nix
-            tar -czf paymenter.tar.gz * .env.example .gitignore
+            tar -czf gebilling.tar.gz * .env.example .gitignore
     
       - name: Move file to seperate directory for r2 upload
         run: |
           mkdir -p r2_upload
-          cp paymenter.tar.gz r2_upload/
+          cp gebilling.tar.gz r2_upload/
 
       # Upload artifact
       - name: Upload archive
@@ -52,6 +52,6 @@ jobs:
           r2-account-id: ${{ secrets.CF_R2_ACCOUNT_ID }}
           r2-access-key-id: ${{ secrets.CF_R2_KEY_ID }}
           r2-secret-access-key: ${{ secrets.CF_R2_KEY_ACCESS }}
-          r2-bucket: paymenter-api
+          r2-bucket: gebilling-api
           source-dir: r2_upload
           destination-dir: ./

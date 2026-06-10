@@ -1,6 +1,6 @@
 <?php
 
-namespace Paymenter\Extensions\Servers\Plesk;
+namespace GEBilling\Extensions\Servers\Plesk;
 
 use App\Classes\Extension\Server;
 use App\Models\Service;
