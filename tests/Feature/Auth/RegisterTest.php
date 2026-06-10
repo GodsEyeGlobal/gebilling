@@ -37,8 +37,8 @@ class RegisterTest extends TestCase
     public function test_can_register_with_valid_credentials()
     {
         $response = Livewire::test(Register::class)
-            ->set('first_name', 'Corwin')
-            ->set('last_name', 'Corwin')
+            ->set('first_name', 'GodsEye')
+            ->set('last_name', 'GodsEye')
             ->set('email', 'contact@godseyeglobal.com')
             ->set('password', 'passw0rd')
             ->set('password_confirmation', 'passw0rd')
@@ -57,8 +57,8 @@ class RegisterTest extends TestCase
     public function test_cant_register_with_invalid_credentials()
     {
         $response = Livewire::test(Register::class)
-            ->set('first_name', 'Corwin')
-            ->set('last_name', 'Corwin')
+            ->set('first_name', 'GodsEye')
+            ->set('last_name', 'GodsEye')
             ->set('email', 'contact@godseyeglobal.com')
             ->set('password', 'passw0rd')
             ->set('password_confirmation', 'pswrd')
