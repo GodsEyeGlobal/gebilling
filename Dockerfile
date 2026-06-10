@@ -44,8 +44,8 @@ RUN cp -r /app/themes /app/themes_default && \
     cp -r /app/extensions /app/extensions_default
 
 # Environment variable to skip default themes/extensions renewal
-# Set PAYMENTER_SKIP_DEFAULT=true to keep any custom modifications to defaults
-ENV PAYMENTER_SKIP_DEFAULT=false
+# Set GEBILLING_SKIP_DEFAULT=true to keep any custom modifications to defaults
+ENV GEBILLING_SKIP_DEFAULT=false
 
 COPY .github/docker/default.conf /etc/nginx/http.d/default.conf
 COPY .github/docker/www.conf /usr/local/etc/php-fpm.conf

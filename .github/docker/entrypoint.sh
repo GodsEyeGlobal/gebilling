@@ -51,8 +51,8 @@ else
   echo -e "Storage symlink already exists."
 fi
 
-## renew default themes and extensions unless PAYMENTER_SKIP_DEFAULT is set
-if [ -z "$PAYMENTER_SKIP_DEFAULT" ] || [ "$PAYMENTER_SKIP_DEFAULT" != "true" ]; then
+## renew default themes and extensions unless GEBILLING_SKIP_DEFAULT is set
+if [ -z "$GEBILLING_SKIP_DEFAULT" ] || [ "$GEBILLING_SKIP_DEFAULT" != "true" ]; then
   echo -e "Renewing default themes and extensions..."
   
   # Renew default themes
@@ -105,7 +105,7 @@ if [ -z "$PAYMENTER_SKIP_DEFAULT" ] || [ "$PAYMENTER_SKIP_DEFAULT" != "true" ]; 
   chmod -R 755 /app/themes /app/extensions
   echo -e "Default themes and extensions renewed."
 else
-  echo -e "PAYMENTER_SKIP_DEFAULT is set, skipping renewal of default themes and extensions."
+  echo -e "GEBILLING_SKIP_DEFAULT is set, skipping renewal of default themes and extensions."
 fi
 
 ## copy default themes if themes directory is empty or doesn't exist
