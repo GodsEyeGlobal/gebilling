@@ -89,7 +89,6 @@ class FilamentInput
                     ->suffix($setting->suffix ?? null)
                     ->prefix($setting->prefix ?? null)
                     ->disabled($setting->disabled ?? false)
-                    ->hintActions(isset($setting->action) ? [($setting->action)::make()] : [])
                     ->rules($setting->validation ?? []);
                 break;
 
@@ -119,7 +118,6 @@ class FilamentInput
                     ->suffix($setting->suffix ?? null)
                     ->prefix($setting->prefix ?? null)
                     ->disabled($setting->disabled ?? false)
-                    ->hintActions(isset($setting->action) ? [($setting->action)::make()] : [])
                     ->rules($setting->validation ?? []);
                 break;
 
@@ -168,6 +166,7 @@ class FilamentInput
                     ->rules($setting->validation ?? [])
                     ->disabled($setting->disabled ?? false);
                 break;
+
             case 'password':
                 return TextInput::make($setting->name)
                     ->label($setting->label ?? $setting->name)
@@ -185,6 +184,7 @@ class FilamentInput
                     ->disabled($setting->disabled ?? false)
                     ->rules($setting->validation ?? []);
                 break;
+
             case 'email':
                 return TextInput::make($setting->name)
                     ->label($setting->label ?? $setting->name)
@@ -201,6 +201,7 @@ class FilamentInput
                     ->disabled($setting->disabled ?? false)
                     ->rules($setting->validation ?? []);
                 break;
+
             case 'number':
                 return TextInput::make($setting->name)
                     ->label($setting->label ?? $setting->name)
@@ -218,8 +219,8 @@ class FilamentInput
                     ->prefix($setting->prefix ?? null)
                     ->disabled($setting->disabled ?? false)
                     ->rules($setting->validation ?? []);
-
                 break;
+
             case 'color':
                 $mode = $setting->color_mode ?? 'hsl';
                 $color = ColorPicker::make($setting->name)
@@ -254,6 +255,44 @@ class FilamentInput
 
                 return $color;
                 break;
+
+            /**
+             * NEW: Image upload input type
+             * Stores uploaded image path in the setting value.
+             */
+            case 'image':
+                $input = FileUpload::make($setting->name)
+                    ->label($setting->label ?? $setting->name)
+                    ->helperText($setting->description ?? null)
+                    ->hint($setting->hint ?? null)
+                    ->hintColor('primary')
+                    ->required($setting->required ?? false)
+                    ->live(condition: $setting->live ?? false)
+                    ->default($setting->default ?? '')
+                    ->disk($setting->disk ?? 'public')
+                    ->visibility($setting->visibility ?? 'public')
+                    ->preserveFilenames($setting->preserve_filenames ?? true)
+                    ->disabled($setting->disabled ?? false)
+                    ->downloadable()
+                    ->image()
+                    ->acceptedFileTypes($setting->accept ?? ['image/*'])
+                    ->rules($setting->validation ?? []);
+
+                // Optional: store in a folder (recommended)
+                if (isset($setting->directory)) {
+                    $input->directory($setting->directory);
+                }
+
+                // Optional: force a known filename
+                if (isset($setting->file_name)) {
+                    $input->getUploadedFileNameForStorageUsing(
+                        fn (): string => (string) $setting->file_name,
+                    );
+                }
+
+                return $input;
+                break;
+
             case 'file':
                 $input = FileUpload::make($setting->name)
                     ->label($setting->label ?? $setting->name)
@@ -278,7 +317,6 @@ class FilamentInput
                 }
 
                 return $input;
-
                 break;
 
             case 'checkbox':
