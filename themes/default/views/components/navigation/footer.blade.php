@@ -11,8 +11,14 @@
                 <div class="text-sm text-base/70">
                     {{ __('© :year :app_name. | All rights reserved.', ['year' => date('Y'), 'app_name' => config('app.name')]) }}
                 </div>
-                {{-- GEBilling is free and opensource, removing this link is not cool --}}
+                {{-- Paymenter is free and opensource, removing this link is not cool --}}
             </div>
+            <a class="bg-background-secondary border border-neutral p-2 rounded-lg transition-colors group mt-4 mb-6 flex items-center gap-2 text-base/50 hover:text-base" href="https://paymenter.org" target="_blank">
+                <p class="text-sm font-medium tracking-tight">{{ __('Powered by') }}</p>
+                <svg class="h-3.5 w-auto mt-0.5 text-current" viewBox="0 0 260 40" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="30" fill="currentColor" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800" letter-spacing="-1">GodsEye</text>
+                </svg>
+            </a>
         </div>
     </div>
 </footer>
