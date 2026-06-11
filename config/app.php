@@ -20,7 +20,7 @@ return [
 
     'name' => env('APP_NAME', 'GEBilling'),
 
-    'version' => 'development',
+    'version' => '1.0.6',
 
     'commit' => '',
 
