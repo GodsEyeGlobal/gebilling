@@ -2,7 +2,7 @@
 </div>
 
 <span class="text-xs text-gray-400 mt-auto">
-    Powered by <a href="https://godseyeglobal.com" target="_blank" class="text-gray-400">GEBilling &copy;
+    Powered by <a href="https://godseyeglobal.com" target="_blank" class="text-gray-400">GodsEye &copy;
         {{ date('Y') }}</a>
 </span>
 
