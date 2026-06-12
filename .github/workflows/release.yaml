@@ -49,18 +49,13 @@ jobs:
           rm -rf node_modules tests CODE_OF_CONDUCT.md CONTRIBUTING.md flake.lock flake.nix phpstan.neon phpunit.xml shell.nix
           tar -czf gebilling.tar.gz * .env.example .gitignore
 
-      - name: Create checksum and add to changelog
-        run: |
-          SUM=`sha256sum gebilling.tar.gz`
-          echo $SUM > checksum.txt
-        
       - name: Create release
         id: create_release
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          draft: true
+          draft: false
           prerelease: ${{ contains(github.ref, 'rc') || contains(github.ref, 'beta') || contains(github.ref, 'alpha') }}
 
       - name: Upload release archive
